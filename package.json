@@ -1,0 +1,62 @@
+{
+  "name": "cavabrew",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && nodemon --exec electron .\"",
+    "build": "vite build && electron-builder",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.cavabrew.app",
+    "productName": "Cavabrew",
+    "win": {
+      "icon": "assets/cavabrewlogo.ico"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.8.3",
+    "bindings": "^1.5.0",
+    "bootstrap": "^5.3.3",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-usb": "^3.0.0-alpha.4",
+    "grunt": "^0.4.5",
+    "lucide-react": "^0.479.0",
+    "node-gyp": "^11.1.0",
+    "node-pre-gyp": "^0.17.0",
+    "node-printer": "^1.0.4",
+    "node-thermal-printer": "^4.4.4",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-data-table-component": "^7.7.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "react-select": "^5.10.1",
+    "serialport": "^13.0.0",
+    "sharp": "^0.33.5",
+    "sweetalert2": "^11.17.2",
+    "usb": "^2.15.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^35.0.1",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "nodemon": "^3.1.9",
+    "vite": "^6.2.0",
+    "wait-on": "^8.0.3"
+  }
+}

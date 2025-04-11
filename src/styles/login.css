@@ -1,0 +1,23 @@
+
+.login-card {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login-subtitle {
+    font-size: 12px;
+    color: gray;
+}
