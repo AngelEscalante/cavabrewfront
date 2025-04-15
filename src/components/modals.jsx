@@ -4,6 +4,7 @@ import FormClientes from "./formularios/clientes.jsx";
 import FormAperturas from "./formularios/aperturas.jsx";
 import FormProductos from "./formularios/productos.jsx";
 import FormCavas from "./formularios/cavas.jsx";
+import AsignarBotellas from "./formularios/asignarBotellas.jsx";
 
 
 function getFormularioComponent(form,empresa) {

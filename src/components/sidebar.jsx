@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import { Users, Shield, Box, Warehouse, ClipboardList, FileText, UtensilsCrossed, Cog } from "lucide-react";
+import { Users, Shield, Box, Warehouse, ClipboardList, FileText, UtensilsCrossed, Cog,FilePlus} from "lucide-react";
 
 const menuItems = [
   { name: "Usuarios", icon: <Users /> },
 //  { name: "Perfiles (Permisos)", icon: <Shield /> },
   { name: "Productos", icon: <Box /> },
+  { name: "Asignacion", icon: <FilePlus /> },
   { name: "Cavas", icon: <Warehouse /> },
   { name: "Clientes", icon: <Users /> },
 //  { name: "Membresías", icon: <ClipboardList /> },
@@ -36,6 +37,9 @@ export default function Sidebar({ rol }) {
       case 'Comedor':
         navigate("/dashboard/comedor");
         break;
+      case 'Asignacion':
+          navigate("/dashboard/asignacion");
+          break;
       case 'Reportes':
         navigate("/dashboard/reportes");
         break;

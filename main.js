@@ -35,9 +35,12 @@ function createWindow() {
         event.preventDefault();
       }
     });
+    win.loadFile(path.join(__dirname, "dist", "index.html"));
+  }else{
+    win.loadURL("http://localhost:5173");
   }
 
-  win.loadURL(isDev ? "http://localhost:5173" : `file://${__dirname}/index.html`);
+  //win.loadURL(isDev ? "http://localhost:5173" : `file://${__dirname}/index.html`);
 }
 
 
